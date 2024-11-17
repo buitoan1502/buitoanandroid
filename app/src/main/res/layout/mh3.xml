@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#EEE6D9"
+    tools:context=".Signup">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="358dp"
+        android:layout_height="208dp"
+        android:layout_marginStart="36dp"
+        android:layout_marginTop="16dp"
+        android:cropToPadding="true"
+        android:src="@drawable/anh2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        tools:ignore="MissingConstraints"/>
+
+    <Button
+        android:id="@+id/btnLogin"
+        android:layout_width="178dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="244dp"
+        android:layout_marginEnd="8dp"
+        android:text="Log In"
+
+        app:layout_constraintEnd_toStartOf="@+id/btnSignup"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints"/>
+
+    <Button
+        android:id="@+id/btnSignup"
+        android:layout_width="171dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="244dp"
+
+        android:text="Sign up"
+        android:background="@drawable/button"
+
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/btnLogin"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints" />
+
+
+    <EditText
+        android:id="@+id/edtten"
+
+        android:layout_width="346dp"
+        android:layout_height="56dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="32dp"
+        android:hint="Username"
+        android:inputType="text"
+        android:minHeight="48dp"
+        android:padding="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/btnLogin" />
+
+    <EditText
+        android:id="@+id/edttaikhoan"
+        android:layout_width="346dp"
+        android:layout_height="56dp"
+        android:hint="Accout name"
+
+        android:inputType="text"
+        android:minHeight="48dp"
+        android:padding="10dp"
+        tools:layout_editor_absoluteX="31dp"
+        tools:layout_editor_absoluteY="379dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/edtten"
+        tools:ignore="MissingConstraints,UnknownId" />
+
+    <EditText
+        android:id="@+id/edtemail"
+        android:layout_width="346dp"
+        android:layout_height="56dp"
+        android:hint="Email"
+        android:inputType="textEmailAddress"
+        android:minHeight="48dp"
+        android:padding="10dp"
+
+        tools:layout_editor_absoluteX="31dp"
+        tools:layout_editor_absoluteY="442dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/edttaikhoan"
+        tools:ignore="MissingConstraints,UnknownId"/>
+
+    <EditText
+        android:id="@+id/sdt"
+        android:layout_width="346dp"
+        android:layout_height="56dp"
+        android:hint="Phone number"
+        android:inputType="text"
+        android:minHeight="48dp"
+        android:padding="10dp"
+        tools:layout_editor_absoluteX="31dp"
+        tools:layout_editor_absoluteY="508dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/edtemail"
+        tools:ignore="MissingConstraints,UnknownId"/>
+
+    <EditText
+        android:id="@+id/edtmk"
+        android:layout_width="346dp"
+        android:layout_height="56dp"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:minHeight="48dp"
+        android:padding="10dp"
+        tools:layout_editor_absoluteX="33dp"
+        tools:layout_editor_absoluteY="573dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/sdt"
+        tools:ignore="MissingConstraints,UnknownId"/>
+
+    <Button
+        android:id="@+id/dangnhap"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="28dp"
+        android:layout_marginEnd="32dp"
+        android:backgroundTint="#C49A6C"
+        android:text="Log In"
+        android:textColor="@android:color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edtmk"
+        tools:ignore="MissingConstraints" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+

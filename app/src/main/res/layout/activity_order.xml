@@ -1,0 +1,283 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#FDEAC7"
+    android:padding="16dp">
+
+    <!-- Header -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical">
+
+
+
+        <!-- Menu icon -->
+        <ImageView
+            android:layout_width="47dp"
+            android:layout_height="57dp"
+            android:layout_marginEnd="8dp"
+            android:contentDescription="Menu Icon"
+            android:src="@drawable/basoc" />
+
+        <!-- Title -->
+        <TextView
+            android:fontFamily="@font/londrinasolidregular"
+            android:layout_width="315dp"
+            android:layout_height="57dp"
+            android:layout_gravity="center"
+            android:text="HELLO CÀ PHÊ"
+            android:gravity="center"
+            android:textColor="#FFD700"
+            android:textSize="30sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <!-- Order label -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ORDER"
+        android:fontFamily="@font/londrinasolidregular"
+
+        android:textStyle="bold"
+        android:layout_marginTop="8dp"
+        android:layout_gravity="center_horizontal"
+        android:textColor="#A0522D"
+        android:textSize="30sp" />
+
+    <!-- Item List -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="16dp">
+
+        <!-- res/layout/order_item.xml -->
+        <LinearLayout
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:background="@android:drawable/editbox_background"
+            android:padding="8dp"
+            android:layout_marginBottom="8dp">
+
+            <TextView
+                android:text="Bac xiu"
+                android:textSize="25dp"
+                android:textColor="@color/black"
+                android:layout_width="200dp"
+                android:layout_height="40dp"
+                android:layout_marginEnd="8dp"
+                android:background="@color/white"
+                />
+
+            <Button
+                android:layout_width="50dp"
+                android:layout_height="48dp"
+                android:background="#D3D3D3"
+                android:gravity="center_horizontal"
+                android:text="+"
+                android:textSize="30dp" />
+
+            <EditText
+                android:layout_width="85dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@android:color/white"
+                android:gravity="center"
+                android:inputType="number"
+                android:minHeight="48dp"
+                android:text="1" />
+
+            <Button
+                android:layout_width="50dp"
+                android:layout_height="48dp"
+                android:background="#D3D3D3"
+                android:text="-"
+                android:textSize="30dp" />
+        </LinearLayout>
+        <!-- res/layout/order_item.xml -->
+        <LinearLayout
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:background="@android:drawable/editbox_background"
+            android:padding="8dp"
+            android:layout_marginBottom="8dp">
+
+            <TextView
+                android:text="caffesua"
+                android:textColor="@color/black"
+                android:textSize="25dp"
+                android:layout_width="200dp"
+                android:layout_height="40dp"
+                android:layout_marginEnd="8dp"
+                android:background="@color/white"
+                />
+
+            <Button
+                android:layout_width="50dp"
+                android:layout_height="48dp"
+                android:background="#D3D3D3"
+                android:gravity="center_horizontal"
+                android:text="+"
+                android:textSize="30dp" />
+
+            <EditText
+                android:layout_width="85dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@android:color/white"
+                android:gravity="center"
+                android:inputType="number"
+                android:minHeight="48dp"
+                android:text="1" />
+
+            <Button
+                android:layout_width="50dp"
+                android:layout_height="48dp"
+                android:background="#D3D3D3"
+                android:text="-"
+                android:textSize="30dp" />
+        </LinearLayout>
+        <!-- res/layout/order_item.xml -->
+        <LinearLayout
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:background="@android:drawable/editbox_background"
+            android:padding="8dp"
+            android:layout_marginBottom="8dp">
+
+            <TextView
+                android:text="Note ap cherry"
+                android:textSize="25dp"
+                android:textColor="@color/black"
+                android:layout_width="200dp"
+                android:layout_height="40dp"
+                android:layout_marginEnd="8dp"
+                android:background="@color/white"
+                />
+
+            <Button
+                android:layout_width="50dp"
+                android:layout_height="48dp"
+                android:background="#D3D3D3"
+                android:gravity="center_horizontal"
+                android:text="+"
+                android:textSize="30dp" />
+
+            <EditText
+                android:layout_width="85dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@android:color/white"
+                android:gravity="center"
+                android:inputType="number"
+                android:minHeight="48dp"
+                android:text="1" />
+
+            <Button
+                android:layout_width="50dp"
+                android:layout_height="48dp"
+                android:background="#D3D3D3"
+                android:text="-"
+                android:textSize="30dp" />
+        </LinearLayout>
+
+        <!--ListView
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:id="@+id/list_item"/-->
+    </LinearLayout>
+
+    <!-- Total and Payment -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="71dp"
+        android:padding="8dp">
+
+        <TextView
+            android:layout_width="50dp"
+            android:layout_height="34dp"
+            android:layout_marginEnd="25dp"
+            android:text="Total"
+            android:textColor="#000000"
+            android:textSize="18sp" />
+
+        <EditText
+            android:id="@+id/tongDoUong"
+            android:layout_width="287dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="3dp"
+            android:background="#FFFFFF"
+            android:gravity="bottom"
+            android:padding="18dp"
+            android:text=""
+            android:textColor="@color/black"
+            tools:ignore="SpeakableTextPresentCheck" />
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Select payment method"
+        android:textColor="#A0522D"
+        android:textSize="16sp" />
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/radioGroupPayment">
+
+
+            <RadioButton
+                android:id="@+id/tienmat"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:buttonTint="#D3D3D3"
+                android:minHeight="48dp"
+                android:text="Cash payment"
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <RadioButton
+                android:id="@+id/chuyenkhoan"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:buttonTint="#D3D3D3"
+                android:minHeight="48dp"
+                android:text="Payment by transfer"
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+    </RadioGroup>
+
+
+    <Button
+        android:id="@+id/btnPay"
+        android:layout_width="141dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="16dp"
+        android:backgroundTint="#F4B400"
+        android:text="Pay"
+        android:textColor="#000000"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+</LinearLayout>
